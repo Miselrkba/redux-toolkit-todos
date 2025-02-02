@@ -17,11 +17,7 @@ A simple web application for managing a list of items using React, TypeScript, R
 
 ## **How to Run the Project**
 
-    git clone https://github.com/Miselrkba/redux-toolkit-todos-app
-    cd redux-toolkit-todo-app
+    git clone https://github.com/Miselrkba/redux-toolkit-todos
+    cd redux-toolkit-todos
     npm install
     npm run dev
-"# redux-toolkit-todos-app" 
-"# redux-toolkit-todos-app" 
-"# redux-toolkit-todos" 
-"# redux-toolkit-todos" 
