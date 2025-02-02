@@ -1,0 +1,155 @@
+$bgColor: #f0f4f8;
+$primaryColor: #3b82f6;
+$primaryHoverColor: #1d4ed8;
+$editColor: #10b981;
+$editHoverColor: #047857;
+$deleteColor: #ef4444;
+$deleteHoverColor: #dc2626;
+$grayBorder: #ccc;
+$whiteColor: #fff;
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $bgColor;
+  padding: 2rem;
+}
+
+.statusText {
+  margin-bottom: 1rem;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  margin-bottom: 1rem;
+
+  input {
+    flex: 1;
+    padding: 0.4rem;
+    border: 1px solid $grayBorder;
+    border-radius: 4px;
+  }
+
+  button {
+    margin-left: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    background-color: $primaryColor;
+    color: $whiteColor;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primaryHoverColor;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  background-color: $whiteColor;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid $grayBorder;
+  justify-content: space-between;
+
+  > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  span {
+    flex: 1;
+    margin-right: 0.5rem;
+  }
+
+  input {
+    flex: 1;
+    margin-right: 0.5rem;
+    padding: 0.4rem;
+    border: 1px solid $grayBorder;
+    border-radius: 4px;
+  }
+
+  button {
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    color: $whiteColor;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .editBtn {
+    background-color: $editColor;
+
+    &:hover {
+      background-color: $editHoverColor;
+    }
+  }
+
+  .deleteBtn {
+    background-color: $deleteColor;
+
+    &:hover {
+      background-color: $deleteHoverColor;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .appContainer {
+    padding: 1rem;
+  }
+
+  form {
+    flex-direction: column;
+
+    button {
+      margin: 0.5rem 0 0 0;
+      width: 4rem;
+    }
+  }
+
+  ul {
+    max-width: 100%;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+
+    > div {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    span {
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      margin-bottom: 0.5rem;
+    }
+
+    button {
+      width: auto;
+      margin: 0 0.5rem 0.5rem 0;
+    }
+  }
+}
